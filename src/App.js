@@ -1,24 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import Profile from './Gallery.jsx';
+import { Picture } from './Gallery.jsx';
+
+function greeting(){
+  return "a greeting from react page";
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div>
+      <h1>Hello world</h1>
+      <p>{greeting()}</p>
+      <Picture></Picture>
+      <Profile name="Jane Doe" email="jane@gmail.com" ></Profile>
+    </div>    
   );
 }
 
